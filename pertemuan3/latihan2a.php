@@ -5,6 +5,7 @@
 // ternary
 // swicth
 
+
 $x = 2;
 if( $x < 20 ) {
     echo "benar";
