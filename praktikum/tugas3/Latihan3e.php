@@ -85,8 +85,7 @@ $laptop = [
         "Picture" => "10.jpg",
         "Name" => "ASUS ROG GX531GX",
         "Description" => "Prosesor Core i7 8750HK, Penyimpanan 1 TB SSD, RAM 24 GB, Ukuran Layar 15.6 inch",
-        "Price" => "
-        Rp 47.499.000",
+        "Price" => "Rp 47.499.000",
         "Category" => "Laptop"
     ]
 ];
