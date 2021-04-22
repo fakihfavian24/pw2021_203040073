@@ -8,7 +8,7 @@ Informatika - B
 ?>
 <?php
 // menghubungkan dengan file php lainnya
-require 'php/functions.php';
+require 'functions.php';
 
 // melakukan query
 $laptop = query("SELECT * FROM laptop");
@@ -28,7 +28,8 @@ if( isset($_POST["cari"]) ) {
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styleadmin.css">
+    <link rel="stylesheet" href="../css/styleadmin3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Daftar Laptop</title>
 </head>
@@ -42,17 +43,20 @@ if( isset($_POST["cari"]) ) {
   </nav>
   <br>
 
-<h3>Daftar Harga Laptop 2021</h3><br>
-
-    <p><a href="php/tambah.php" class="tbl-pink">Tambah Data</a></p>
+    <h3>Daftar Harga Laptop 2021</h3>
     <br>
+
+    <p><a href="tambah.php" class="tbl-pink">Tambah Data</a></p>
+    <br>
+
+    <button>logout</button>
 
 
 <div class="input">
 <form action="" method="post">
 
     <input type="text" name="keyword" autofocus placeholder="masukkan keyword pencarian.." autocomplete="off">
-    <button type="submit" name="cari">Cari!</button>
+    <button type="submit" name="cari"><i class="Tiny material-icons">search</i></button>
 
 </form>
 </div>
@@ -66,30 +70,42 @@ if( isset($_POST["cari"]) ) {
                     <th scope="col">No</th>
                     <th scope="col">Picture</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Detail</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Category</th>
                     <th scope="col">Opsi</th>
                 </tr>
             </thead>
         <tbody>
+
+        <?php if (empty($laptop)) : ?>
+            <tr>
+                <td colspan="7">
+                    <h1>Data tidak ditemukan</h1>
+                </td>
+            </tr>
+        <?php else : ?>
             <?php foreach($laptop as $lp => $l) : ?>
             <tr>
                 <td><?= $lp+1 ?></td>
                 <td>
-                    <img src="assets/img/<?= $l["picture"]; ?>">
+                    <img src="../assets/img/<?= $l["picture"]; ?>">
                 </td>
                 <td><?= $l["name"]; ?></td>
-                <td>
-                    <p><a href="php/detail.php?id=<?= $l['id'] ?>" class="tbl-biru" <?= $l["name"] ?>>Detail</a></p>
-                </td>
-                <td>
-                    <a href="php/ubah.php?id=<?= $l['id']?>" class="tbl-hijau">Ubah</a>
-                    <a href="php/hapus.php?id=<?= $l['id']?>" onclick="return confirm('Hapus Data??')" class="tbl-merah">Hapus</a>
+                <td><?= $l["description"]; ?></td>
+                <td><?= $l["price"]; ?></td>
+                <td><?= $l["category"]; ?></td>
+                <td class="opsi">
+                    <a href="ubah.php?id=<?= $l['id']?>" class="tbl-hijau">Ubah</a>
+                    <a href="hapus.php?id=<?= $l['id']?>" onclick="return confirm('Hapus Data??')" class="tbl-merah">Hapus</a>
                 </td>
             </tr>
             <?php endforeach; ?>
+            <?php endif; ?>
         </tbody>
     </div>
     </div>
 </body>
 </table>
+<br>
 </html>

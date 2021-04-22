@@ -9,12 +9,12 @@ if (isset($_POST['ubah'])) {
     if (ubah($_POST) > 0) {
         echo "<script>
                     alert('Data Berhasil diubah!');
-                    document.location.href = '../admin.php';
+                    document.location.href = 'admin.php';
                 </script>";
     } else {
         echo "<script>
                     alert('Data Gagal diubah!');
-                    document.location.href = '../admin.php';
+                    document.location.href = 'admin.php';
                 </script>";
     }
 }
@@ -69,7 +69,7 @@ if (isset($_POST['ubah'])) {
             <br>
             <button type="submit" name="ubah">Ubah Data!</button>
             <button type="submit">
-            <a href="../admin.php">Kembali</a>
+            <a href="admin.php">Kembali</a>
             </button>
         </ul>
     </form>

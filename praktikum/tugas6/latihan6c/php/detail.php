@@ -23,7 +23,7 @@ $laptop = query("SELECT * FROM laptop WHERE id = $id")[0];
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Detail</title>
 </head>
 <body>
 <div class="container">

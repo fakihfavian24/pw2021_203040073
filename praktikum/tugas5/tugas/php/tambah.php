@@ -6,12 +6,12 @@ if (isset($_POST['tambah'])) {
     if (tambah($_POST) > 0) {
         echo "<script>
                     alert('Data Berhasil ditambahkan!');
-                    document.location.href = '../admin.php';
+                    document.location.href = 'admin.php';
                 </script>";
     } else {
         echo "<script>
                     alert('Data Gagal ditambahkan!');
-                    document.location.href = '../admin.php';
+                    document.location.href = 'admin.php';
                 </script>";
     }
 }
@@ -64,7 +64,7 @@ if (isset($_POST['tambah'])) {
             <br>
             <button type="submit" name="tambah">Tambah Data!</button>
             <button type="submit">
-            <a href="../admin.php">Kembali</a>
+            <a href="admin.php">Kembali</a>
             </button>
         </ul>
     </form>

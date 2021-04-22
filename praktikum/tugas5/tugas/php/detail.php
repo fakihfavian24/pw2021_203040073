@@ -8,7 +8,7 @@ Informatika - B
 ?>
 <?php
 if (!isset($_GET['id'])) {
-    header("location: ../admin.php");
+    header("location: admin.php");
     exit;
 }
 
@@ -37,7 +37,7 @@ $laptop = query("SELECT * FROM laptop WHERE id = $id")[0];
         <p><?= $laptop["category"]; ?></p>
     </div>
 
-    <button class="tombol-kembali"><a href="../admin.php">Kembali</a></button>
+    <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
 </div>    
 </body>
 </html>

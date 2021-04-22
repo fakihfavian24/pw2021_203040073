@@ -17,6 +17,7 @@ body {
 }
 
 h3 {
+    margin-top: 60px;
     margin-left: 140px;
     font-size: 30px;
     font-weight: bold;
@@ -29,6 +30,7 @@ h3 {
 
 a.tbl-pink {
     background: #e91e63;
+    border: 1px solid black;
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px 15px 10px 15px;
@@ -45,11 +47,14 @@ a.tbl-pink:hover {
     text-decoration: none;
 }
 
+.opsi {
+    width: 150px;
+}
+
 a.tbl-hijau {
     background: #4caf50;
     border-radius: 5px;
-    margin-top: 20px;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 5px 2px 5px;
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;
@@ -65,8 +70,7 @@ a.tbl-hijau:hover {
 a.tbl-merah {
     background: #f44336 ;
     border-radius: 5px;
-    margin-top: 20px;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 5px 2px 5px;
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;

@@ -8,7 +8,7 @@ if (hapus($id) > 0)
     echo "
         <script>
         alert('Data Berhasil dihapus!');
-        document.location.href = '../admin.php';
+        document.location.href = 'admin.php';
         </script>
     ";
 } else
@@ -16,7 +16,7 @@ if (hapus($id) > 0)
     echo "
         <script>
         alert('Data Gagal dihapus!');
-        document.location.href = '../admin.php';
+        document.location.href = 'admin.php';
         </script>
     ";
 }
