@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Viga;
+  background: #34495e;
+}
+
+.card {
+  justify-content: center;
+  margin: 100px auto;
+  font-family: Viga;
+}

@@ -37,17 +37,18 @@
   <div class="containerlink">
     <div class="row b">
       <div class="col">
-        <a href="../pertemuan11/index.php">Pertemuan 11</a>
+        <a href="../kuliah/pertemuan10">Pertemuan 10</a>
       </div>
       <div class="col">
-        <a href="../pertemuan12/index.php">Pertemuan 12</a>
+        <a href="../kuliah/pertemuan11/index.php">Pertemuan 11</a>
       </div>
       <div class="col">
-        <a href="">Pertemuan 13</a>
+        <a href="../kuliah/pertemuan12/index.php">Pertemuan 12</a>
       </div>
       <div class="col">
-        <a href="">Pertemuan 14</a>
+        <a href="../kuliah/pertemuan13/index.php">Pertemuan 13</a>
       </div>
+
     </div>
   </div>
 

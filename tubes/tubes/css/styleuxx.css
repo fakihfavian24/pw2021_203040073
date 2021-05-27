@@ -1,0 +1,344 @@
+.slider h3,
+.slider h5 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slider::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.brand-logo {
+  font-family: Viga;
+}
+
+.btn {
+  border-radius: 10px;
+  width: 100px;
+  background-color: #009688;
+}
+
+.loginn {
+  padding-top: -40px;
+}
+
+.tbl {
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-family: Viga;
+}
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-family: Viga;
+}
+
+.medsos {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.medsos a {
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+  color: #212121;
+}
+
+.font {
+  font-family: 'comic sans ms';
+}
+
+/* Our Services */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Viga;
+  box-sizing: border-box;
+}
+
+.services-section {
+  background: #fff;
+  background-size: cover;
+  padding: 5px 0;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  color: #212121;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.border {
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 20px auto;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.service-icon i {
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+
+.service-box:hover .service-icon {
+  background: #82ccdd;
+  color: #fff;
+}
+
+.service-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+@media  screen and (max-width:960px) {
+  .service-box {
+    max-width: 45%;
+  }
+}
+
+@media  screen and (max-width:768px) {
+  .service-box {
+    max-width: 50%;
+  }
+}
+
+@media  screen and (max-width:480px) {
+  .service-box {
+    max-width: 100%;
+  }
+}
+/* akhir Our Services */
+
+.input {
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 235px;
+  font-family: 'comic sans ms';
+}
+
+.input button {
+  background: #9e9e9e;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 2px 4px 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'comic sans ms';
+}
+
+.input button:hover {
+  background: #212121;
+  text-decoration: none;
+}
+
+a.tbl-biru {
+  background: #03a9f4;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'comic sans ms';
+}
+
+a.tbl-biru:hover {
+  background: #01579b;
+  text-decoration: none;
+}
+
+.tbll {
+  display: flex;
+  justify-content: center;
+}
+
+@media  screen and (max-width:480px) {
+  .input {
+    width: 300px;
+    margin-left: 35px;
+  }
+}
+
+/* Contact Us */
+.containerUs {
+  min-height: 500px;
+  background: url(../img/slider/15.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+}
+
+.contact-form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+  margin-right: 15px;
+}
+
+.contact-form textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn {
+  float: right;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover {
+  background: #0582E3;
+}
+
+@media screen and (max-width: 950px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    margin: 30px 50px;
+  }
+
+  .contact-form h2 {
+    font-size: 30px;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+}
+/* akhir Contact Us */
+
+footer {
+  padding: 15px 0;
+}

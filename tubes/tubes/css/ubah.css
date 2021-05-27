@@ -1,0 +1,17 @@
+body {
+  background: #34495e;
+}
+
+.container {
+  width: 300px;
+  border: 1px solid black;
+  margin: 150px auto;
+  font-family: Viga;
+  border-radius: 6px;
+  background: #ddd;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 30px;
+}

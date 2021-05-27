@@ -99,8 +99,7 @@
       <div class="content">
         <h2>01</h2>
         <h3>Kuliah</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quod maiores aperiam dolorem expedita
-          omnis dolor debitis incidunt praesentium eos.</p>
+        <p>Bagian ini akan menuju ke link tugas kuliah.</p>
         <a href="frontend/kuliah.php">Read More</a>
       </div>
     </div>
@@ -108,8 +107,7 @@
       <div class="content">
         <h2>02</h2>
         <h3>Praktikum</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quod maiores aperiam dolorem expedita
-          omnis dolor debitis incidunt praesentium eos.</p>
+        <p>Bagian akan menuju ke link tugas praktikum.</p>
         <a href="frontend/praktikum.php">Read More</a>
       </div>
     </div>
@@ -117,8 +115,7 @@
       <div class="content">
         <h2>03</h2>
         <h3>Tubes</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quod maiores aperiam dolorem expedita
-          omnis dolor debitis incidunt praesentium eos.</p>
+        <p>Bagian ini akan menuju ke link tugas besar.</p>
         <a href="frontend/tubes.php">Read More</a>
       </div>
     </div>
@@ -133,7 +130,7 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript" src="frontend/assets/vanilla-tilt.js"></script>
   <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
       max: 25,

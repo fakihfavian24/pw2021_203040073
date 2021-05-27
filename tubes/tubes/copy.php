@@ -124,3 +124,27 @@ if (isset($_POST["cari"])) {
             <i class="fas fa-search"></i>
         </a>
     </div>
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="gambar">
+                    <img src="../assets/img/<?= $laptop["picture"]; ?>" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="keterangan">
+                    <p><?= $laptop["name"]; ?></p>
+                    <p><?= $laptop["description"]; ?></p>
+                    <p><?= $laptop["price"]; ?></p>
+                    <p><?= $laptop["category"]; ?></p>
+                </div>
+                <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
+            </div>
+        </div>
+    </div> -->
