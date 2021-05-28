@@ -18,7 +18,6 @@ $id = $_GET['id'];
 
 $laptop = query("SELECT * FROM laptop WHERE id = $id")[0];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

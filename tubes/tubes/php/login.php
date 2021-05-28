@@ -49,9 +49,9 @@ if (isset($_POST['submit'])) {
     $error = true;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,27 +59,29 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
 </head>
+
 <body>
     <form class="box" action="" method="post">
         <?php if (isset($error)) : ?>
             <p style="color: red; font-style: italic;">Username atau Password salah</p>
-    <?php endif; ?>
+        <?php endif; ?>
 
-                <h1>Login</h1>
+        <h1>Login</h1>
 
-                <input type="text" name="username" placeholder="Username">
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" name="submit" value="login">
-                <br>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" name="submit" value="login">
+        <br>
 
-                <input type="checkbox" name="remember">
-                <label for="remember">Remember me</label>
+        <input type="checkbox" name="remember">
+        <label for="remember">Remember me</label>
 
         <div class="registrasi">
             <p>Belum punya akun ? Registrasi <a href="registrasi.php">Disini</a></p>
         </div>
-    
-    </div>
+
+        </div>
     </form>
 </body>
+
 </html>
