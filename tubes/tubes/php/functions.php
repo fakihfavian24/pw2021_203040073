@@ -32,7 +32,7 @@ function query($sql)
 function tambah($data)
 {
     $conn = koneksi();
-    
+
     $picture = htmlspecialchars($data["picture"]);
     $name = htmlspecialchars($data["name"]);
     $description = htmlspecialchars($data["description"]);
@@ -41,7 +41,7 @@ function tambah($data)
 
     $query = "INSERT INTO laptop
                 VALUES
-                ('', '$picture', '$name', '$description', '$price', '$category')
+                (NULL, '$picture', '$name', '$description', '$price', '$category')
                 ";
     mysqli_query($conn, $query);
 
@@ -60,7 +60,7 @@ function hapus($id)
 function ubah($data)
 {
     $conn = koneksi();
-    
+
     $id = $data["id"];
     $picture = htmlspecialchars($data["picture"]);
     $name = htmlspecialchars($data["name"]);
@@ -81,7 +81,8 @@ function ubah($data)
     return mysqli_affected_rows($conn);
 }
 
-function cari($keyword) {
+function cari($keyword)
+{
     $query = "SELECT * FROM laptop
                 WHERE
                 name LIKE '%$keyword%' OR
@@ -109,7 +110,7 @@ function registrasi($data)
 
     $password = password_hash($password, PASSWORD_DEFAULT);
 
-    $query_tambah = "INSERT INTO user VALUES('', '$username', '$password')";
+    $query_tambah = "INSERT INTO user VALUES(NULL, '$username', '$password')";
     mysqli_query($conn, $query_tambah);
 
     return mysqli_affected_rows($conn);
